@@ -1,0 +1,7 @@
+
+
+After making any changes to your code, follow the steps below to push...
+
+step 1: git add .  (NB: include the dot(.))
+step 2: git commit -m "your-commit-message"
+step 3: git push

@@ -76,17 +76,89 @@ function findGreaterNumber(num1, num2) {
     }
 }
  // Example usage:
-const number1 = 30;
+const number1 = 90;
 const number2 = 30;
+
+console.log(parseInt(number1) + number2)
  const greaterNumber = findGreaterNumber(number1, number2);
 console.log("The greater number is:", greaterNumber);
 
 const num1 = 10;
 const num2 = 25;
   const result = (num1 + num2)
-  console.log('your resut is:', result)
+  console.log('your result is:', result)
 
 
 
-// var 
+// Write a function that takes a number and determines if it is even or odd
 
+function isEvenorOdd(number){
+  
+    if (number % 2 == 0)
+    console.log('number is even');
+    else
+    console.log('number is odd');
+} 
+isEvenorOdd(11)  
+
+
+// function isNumberPrime(num) {
+//     if(num % 2 != 0) {
+//         if(num % 1 == 0 && num % num == 0){return num} 
+//     } else {
+//         console.log(num, 'is even')
+//     }
+    
+
+//     // if the remainder of the number / 1 is 0 and the remainder of the number / number is also 0, then the number is prime
+// }
+
+
+
+// AI CODE
+
+function isNumberPrime(num) {
+    if (num <= 1) {
+      return false;
+    }
+  
+    if (num <= 3) {
+      return true;
+    }
+  
+    if (num % 2 === 0 || num % 3 === 0) {
+      return false;
+    }
+  
+    let i = 5;
+    while (i * i <= num) {
+      if (num % i === 0 || num % (i + 2) === 0) {
+        return false;
+      }
+      i += 6;
+    }
+  
+    return true;
+  }
+  
+  function checkNumber(num) {
+    if (num % 2 === 0) {
+      console.log(num, 'is even');
+    } else if (isNumberPrime(num)) {
+      console.log(num, 'is prime');
+    } else {
+      console.log(num, 'is odd');
+    }
+  }
+  
+  // Example usage:
+  checkNumber(13); // Output: 10 is even
+//   checkNumber(7);  // Output: 7 is prime
+//   checkNumber(9);  // Output: 9 is odd
+let greatestNum;
+varnum1 = prompt('enter the first number' (num1));
+varnum2 = prompt('enter the second number'(num2));
+if ( num1 > num2)
+  greatestNum = num1;
+else
+greatestNum = Num2;
