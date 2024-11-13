@@ -4,32 +4,103 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
+    <!-- <style>
+     * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;}   
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calculator {
+    width: 250px;
+    height: 500px;
+    box-shadow: 4px 4px 30px rgba(0,0,0,0.2);
+    border-radius: 20px;
+    background: #669feb;
+    
+}
+form input {
+    width: 100%;
+    height: 80px;
+    border-radius: 0px;
+    background: #faf2f2;
+    text-align: right;
+
+}
+.button {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+button {
+    flex: 0 0 22%;
+    width: 60px;
+    height: 60px;
+    font-size: 22px;
+    font-weight: 60;
+    border-radius: 5px;
+    margin: 0%;
+}
+.btn-yellow {
+    background: rgb(0, 0, 0);
+    color: #fff;
+}
+.btn-grey {
+    background: rgb(224, 224, 224);
+    color: #000000;
+}
+.btn-equal {
+    background: rgb(255, 2, 2);
+    color: #fff;
+}
+.btn-clear {
+    background: rgb(218, 233, 4);
+    color: #000000;
+}
+    </style>  -->
+
     <section class="calculator">
         <fieldset>
         <form>
             <input type="text" class="screen" readonly>
         </form>
         <div class="button">
-            <button type="button" class="btn btn-yellow" data-num="*">*</button>
+            <table>
+            <button type="button" class="btn btn-yellow" data-num="*">x</button>
             <button type="button" class="btn btn-yellow" data-num="%">/</button>
             <button type="button" class="btn btn-yellow" data-num="-">-</button>
             <button type="button" class="btn btn-yellow" data-num="+">+</button>
+            </table>
+        <table><td>
             <button type="button" class="btn btn-grey" data-num="9">9</button>
             <button type="button" class="btn btn-grey" data-num="8">8</button>
             <button type="button" class="btn btn-grey" data-num="7">7</button>
-            <button type="button" class="btn btn-grey" data-num="6">6</button>
-            <button type="button" class="btn btn-grey" data-num="5">5</button>
+        </td> </table>
+
+        <table><td>
             <button type="button" class="btn btn-grey" data-num="4">4</button>
-            <button type="button" class="btn btn-grey" data-num="3">3</button>
-            <button type="button" class="btn btn-grey" data-num="2">2</button>
+            <button type="button" class="btn btn-grey" data-num="5">5</button>
+            <button type="button" class="btn btn-grey" data-num="6">6</button>
+        </td></table>
+        <table><td>
             <button type="button" class="btn btn-grey" data-num="1">1</button>
-            <button type="button" class="btn btn-grey" data-num="0">0</button>
+            <button type="button" class="btn btn-grey" data-num="2">2</button>
+            <button type="button" class="btn btn-grey" data-num="3">3</button>
+        </td></table>
+        <table><td>
             <button type="button" class="btn btn-grey" data-num=".">.</button>
+            <button type="button" class="btn btn-grey" data-num="0">0</button>
             <button type="button" class="btn btn-equal">=</button>
-            <button type="button" class="btn btn-clear">C</button>
+            <button type="button" class="btn btn-clear">Clear</button>
+        </td></table>
         </div>
         </fieldset>
     </section>

@@ -1,33 +1,28 @@
-* {
+     * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}body {
+    box-sizing: border-box;}   
+body {
     min-height: 100vh;
-    background: white;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .calculator {
-    width: 300px;
+    width: 250px;
     height: 500px;
     box-shadow: 4px 4px 30px rgba(0,0,0,0.2);
-    border-radius: 12px;
-    background: #222522;
-    overflow: hidden;
+    border-radius: 20px;
+    background: #669feb;
+    
 }
 form input {
     width: 100%;
-    height: 150px;
-    border: none;
-    border-radius: 12px;
-    font-size: 2rem;
-    padding: 1rem;
-    color: #fff;
-    background: #000;
+    height: 80px;
+    border-radius: 0px;
+    background: #faf2f2;
     text-align: right;
-    pointer-events: none;
+
 }
 .button {
     display: flex;
@@ -37,28 +32,26 @@ form input {
 }
 button {
     flex: 0 0 22%;
-    margin: 5px 0;
-    border: 1px solid #000;
     width: 60px;
-    height: 52px;
+    height: 60px;
     font-size: 22px;
-    font-weight: 600;
+    font-weight: 60;
     border-radius: 5px;
-    cursor: pointer;
+    margin: 0%;
 }
 .btn-yellow {
-    background: rgb(245, 146, 62);
+    background: rgb(0, 0, 0);
     color: #fff;
 }
 .btn-grey {
     background: rgb(224, 224, 224);
-    color: #000;
+    color: #000000;
 }
 .btn-equal {
-    background: green;
+    background: rgb(85, 0, 0);
     color: #fff;
 }
 .btn-clear {
-    background: red;
-    color: #fff;
+    background: rgb(224, 240, 1);
+    color: #000000;
 }

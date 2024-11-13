@@ -1,0 +1,10 @@
+
+When accessing values of elements other than input elements, use either:
+- [element].innerHTML
+- [element].innerText
+- [element].textContent
+
+const paragraph = document.querySelector('.paragraph')
+
+When accessing values of input elements, use;
+- [element].value
