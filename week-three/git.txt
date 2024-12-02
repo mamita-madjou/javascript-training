@@ -1,0 +1,4 @@
+git status --> shows you what files have been chansged
+git add . --> adds all files to be committed
+git commit -m "message" --> commits all files with a message
+git push --> pushes all files to github
